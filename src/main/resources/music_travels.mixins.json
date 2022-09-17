@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.dreamtea.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ChestBlockEntityMixin",
+    "DesertWellFeatureMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
