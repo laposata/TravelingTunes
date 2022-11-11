@@ -1,4 +1,4 @@
-package com.dreamtea.mixin;
+package com.dreamtea.mixin.block_entity;
 
 import com.dreamtea.imixin.IAddToChest;
 import net.minecraft.block.entity.ChestBlockEntity;

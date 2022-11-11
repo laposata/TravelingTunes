@@ -5,20 +5,20 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.tag.ItemTags;
-import net.minecraft.tag.TagKey;
 import net.minecraft.util.registry.Registry;
 
-public class Tags extends FabricTagProvider {
+import static com.dreamtea.consts.CREEPER_DISC;
+
+public class Tags extends FabricTagProvider<Item> {
   /**
    * Construct a new {@link net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider} with the default computed path.
    *
    * <p>Common implementations of this class are provided. For example @see BlockTagProvider
    *
    * @param dataGenerator The data generator instance
-   * @param registry      The backing registry for the Tag type.
    */
-  public Tags(FabricDataGenerator dataGenerator, Registry registry) {
-    super(dataGenerator, registry);
+  public Tags(FabricDataGenerator dataGenerator) {
+    super(dataGenerator, Registry.ITEM);
   }
 
   @Override
@@ -41,6 +41,6 @@ public class Tags extends FabricTagProvider {
         Items.MUSIC_DISC_WAIT
       );
     this.getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS).setReplace(true)
-      .add(Items.MUSIC_DISC_11);
+      .add(CREEPER_DISC.get().getItem());
   }
 }

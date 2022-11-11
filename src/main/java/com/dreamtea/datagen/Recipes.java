@@ -1,10 +1,13 @@
 package com.dreamtea.datagen;
 
+import com.dreamtea.recipes.MusicDiskRecipe;
+import com.dreamtea.recipes.SpecialDiscRecipe;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 
 import java.util.function.Consumer;
+
 
 public class Recipes extends FabricRecipeProvider {
   public Recipes(FabricDataGenerator dataGenerator) {
@@ -13,7 +16,8 @@ public class Recipes extends FabricRecipeProvider {
 
   @Override
   protected void generateRecipes(Consumer<RecipeJsonProvider> exporter) {
-
+    SpecialDiscRecipe.exportAll(exporter);
+    MusicDiskRecipe.exportAll(exporter);
   }
 
 }

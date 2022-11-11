@@ -1,8 +1,8 @@
 package com.dreamtea.mixin;
 
+import com.dreamtea.consts;
 import com.dreamtea.imixin.IAddToChest;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.ChestBlock;
 import net.minecraft.item.Items;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.StructureWorldAccess;
@@ -22,7 +22,7 @@ public class DesertWellFeatureMixin {
       StructureWorldAccess structureWorldAccess = context.getWorld();
       BlockPos blockPos = context.getOrigin();
       structureWorldAccess.setBlockState(blockPos.add(0, -3, 0), Blocks.CHEST.getDefaultState(), 2);
-      ((IAddToChest)structureWorldAccess.getBlockEntity(blockPos.add(0, -3, 0))).addToInventory(Items.MUSIC_DISC_BLOCKS.getDefaultStack());
+      ((IAddToChest)structureWorldAccess.getBlockEntity(blockPos.add(0, -3, 0))).addToInventory(consts.WELL_DISC.get());
     }
   }
 }

@@ -4,8 +4,23 @@
   "package": "com.dreamtea.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ChestBlockEntityMixin",
-    "DesertWellFeatureMixin"
+    "DesertWellFeatureMixin",
+    "MusicDiscItemMixin",
+    "RecipeManagerMixin",
+    "block_entity.ChestBlockEntityMixin",
+    "block_entity.GrindstoneScreenHandlerMixin",
+    "items.DiscFragmentItemMixin",
+    "items.ItemsMixin",
+    "minecraft.MinecraftServerMixin",
+    "mobs.ParrotEntityMixin",
+    "mobs.PiglinBrainMixin",
+    "mobs.PiglinEntityMixin",
+    "mobs.ShulkerEntityMixin",
+    "mobs.VillagerEntityMixin",
+    "mobs.WanderingTraderEntityMixin",
+    "mobs.ZombieEntityMixin",
+    "mobs.ZombieVillagerEntityMixin",
+    "mobs.tasks.GiveGiftToHeroTaskMixin"
   ],
   "injectors": {
     "defaultRequire": 1

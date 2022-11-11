@@ -6,7 +6,6 @@ import net.minecraft.tag.TagKey;
 import net.minecraft.util.registry.Registry;
 
 import javax.annotation.Nonnull;
-import java.util.List;
 
 public class LootTablePeeker extends Peeker<ItemStack> {
   private final TagKey<Item> targets;
