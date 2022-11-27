@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.dreamtea.mixin",
+  "package": "com.dreamtea.music.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "DesertWellFeatureMixin",
@@ -10,6 +10,7 @@
     "block_entity.ChestBlockEntityMixin",
     "block_entity.GrindstoneScreenHandlerMixin",
     "items.DiscFragmentItemMixin",
+    "items.ItemMixin",
     "items.ItemsMixin",
     "minecraft.MinecraftServerMixin",
     "mobs.ParrotEntityMixin",
